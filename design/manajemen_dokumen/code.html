@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"inverse-surface":"#263143","primary-container":"#16610e","secondary":"#984800","outline":"#717a6b","on-tertiary-fixed":"#211b00","surface-tint":"#236c1a","on-secondary-container":"#5c2900","primary-fixed-dim":"#8cd979","on-primary":"#ffffff","outline-variant":"#c0c9b8","surface-container":"#e7eeff","surface-variant":"#d8e3fb","on-surface":"#111c2d","on-primary-container":"#8ddb7a","error":"#ba1a1a","error-container":"#ffdad6","primary":"#014800","surface-container-high":"#dee8ff","on-secondary-fixed":"#311300","primary-fixed":"#a7f692","tertiary-fixed":"#ffe251","surface-container-low":"#f0f3ff","surface-dim":"#cfdaf2","on-background":"#111c2d","on-error-container":"#93000a","background":"#f9f9ff","on-primary-fixed-variant":"#015300","on-tertiary-container":"#4a3f00","on-primary-fixed":"#002200","secondary-fixed":"#ffdbc8","on-tertiary":"#ffffff","surface-bright":"#f9f9ff","surface":"#f9f9ff","on-error":"#ffffff","inverse-primary":"#8cd979","inverse-on-surface":"#ecf1ff","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#733500","surface-container-highest":"#d8e3fb","on-tertiary-fixed-variant":"#524600","on-surface-variant":"#40493c","tertiary-fixed-dim":"#e4c600","secondary-fixed-dim":"#ffb689","on-secondary":"#ffffff","tertiary":"#6d5e00","tertiary-container":"#c5aa00","secondary-container":"#fc7d05"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-sm":"0.5rem","space-lg":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","space-md":"1rem","gutter":"1.5rem","space-xs":"0.25rem","gutter-mobile":"1rem","margin":"2rem"},"fontFamily":{"display-hero-mobile":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"body-md":["Inter"],"code-data":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"title-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-sm":["Inter"],"display-hero":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},"fontSize":{"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","letterSpacing":"0","fontWeight":"600"}],"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.015em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0.005em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0","fontWeight":"400"}],"code-data":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"title-lg":["18px",{"lineHeight":"26px","letterSpacing":"0","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"68px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between py-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="px-space-lg flex items-center gap-space-sm"><img alt="Logo AutoDokumen Administrasi Indonesia" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XI1IZya2t01-Ul_HteDbij1yO5d37GeI1VlNVMFdo7cUn7RsRQg6DQ07t3LgpD1VRDTpp1xICrNJnZjg4J0KLg7o3TBOzIVBKPGxrnumveoN-X2M37sDjImPKZY0g2-T7hYtHo85NDunOQ0t9iw3VUttpDd2N6f3EXtIHjX75CogEDVsnA1IJWJDhI1T0ozkHtjeEqU2OcbEigh7SR1GI0Wxzs53rs8o5rTpgsq7-M"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary font-bold leading-tight">AutoDokumen</span><span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Sistem Tata Pamong</span></div></div><nav class="flex flex-col px-space-md gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="generator-ai" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span>Generator AI</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl transition-all bg-primary-container text-on-primary font-bold shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="manajemen-dokumen" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Arsip Dokumen</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="editor-pratinjau" href="#"><span class="material-symbols-outlined text-[20px]">edit_document</span><span>Editor &amp; Pratinjau</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="template-format" href="#"><span class="material-symbols-outlined text-[20px]">file_copy</span><span>Template &amp; Format</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="kop-surat-stempel" href="#"><span class="material-symbols-outlined text-[20px]">approval</span><span>Kop Surat &amp; Stempel</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="statistik-kuota" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span>Statistik &amp; Kuota</span></a></nav></div><div class="flex flex-col px-space-md gap-space-xs"><div class="mx-space-xs p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-xs mb-space-sm"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">Sisa Kuota AI</span><span class="font-label-sm text-label-sm text-primary font-bold">84/100</span></div><div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden"><div class="h-full bg-secondary-container rounded-full w-[84%]"></div></div></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pengaturan" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Pengaturan</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pusat-bantuan" href="#"><span class="material-symbols-outlined text-[20px]">help</span><span>Pusat Bantuan</span></a></nav></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md flex-1 max-w-lg"><img alt="Logo AutoDokumen Administrasi Indonesia" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XI1IZya2t01-Ul_HteDbij1yO5d37GeI1VlNVMFdo7cUn7RsRQg6DQ07t3LgpD1VRDTpp1xICrNJnZjg4J0KLg7o3TBOzIVBKPGxrnumveoN-X2M37sDjImPKZY0g2-T7hYtHo85NDunOQ0t9iw3VUttpDd2N6f3EXtIHjX75CogEDVsnA1IJWJDhI1T0ozkHtjeEqU2OcbEigh7SR1GI0Wxzs53rs8o5rTpgsq7-M"/><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-2 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Cari arsip nomor surat, judul, perihal..." type="search"/></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-surface-container-high text-on-surface"><span class="material-symbols-outlined text-[18px] text-secondary">campaign</span><span class="font-label-sm text-label-sm">Regulasi Permendagri No. 1/2024 Diperbarui</span></div><button class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface font-bold leading-tight">Budi Santoso</span><span class="font-label-sm text-label-sm text-on-surface-variant">Sekretariat Desa</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMUHXgm-bQycsgEyn9K-c0TmDsNF2h9LR7RexBtQkpfH8OD2_DHcQnVmB2X0JX8AMg8NNASVaRIrHuzmDZWr2CiYygJCk8ciat3TRJAS2dNv_R4o_BaSFbY-eyXeDRCVrWQ7itxRvPinThJj-BTfaOvPV8Gz59vfXFWYUAeSSvwj1nIovhjCvTe2fCciKCctDnF3kbK-L6SAK9tbuH_LF3jA9FaSrlI-Ivq3OOlwc"/></div></div></header><main class="w-full pt-20 px-space-lg py-space-lg bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<!-- 1. Header & Quick Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="hover:text-primary transition-colors cursor-pointer">Beranda Admin</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Manajemen Dokumen</span>
+</nav>
+<div class="flex items-center gap-space-sm flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-extrabold tracking-tight">
+          Manajemen Dokumen Administrasi &amp; Generator AI
+        </h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high font-label-sm text-label-sm text-primary font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          Regulasi 2025 Aktif
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Kelola tata naskah dinas, formulir anggaran, dokumen perencanaan daerah, serta berkas pertanggungjawaban dengan verifikasi standar hukum otomatis.
+      </p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap shrink-0">
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">upload_file</span>
+<span>Unggah Template</span>
+</button>
+<button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">file_download</span>
+<span>Ekspor Rekap</span>
+</button>
+<button class="inline-flex items-center gap-2 px-space-lg py-2.5 rounded-xl bg-primary-container text-on-primary hover:bg-primary transition-all shadow-md font-label-md text-label-md font-bold group" type="button">
+<span class="material-symbols-outlined text-[22px] text-tertiary-fixed group-hover:rotate-90 transition-transform">add_circle</span>
+<span>Tambah Dokumen Baru</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">auto_awesome</span>
+</button>
+</div>
+</div>
+<!-- 2. Ringkasan Statistik (KPI Cards Bento) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-primary-container/10 via-transparent to-transparent rounded-bl-full pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Dokumen</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">description</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-display-hero text-[34px] leading-tight text-on-surface font-extrabold">1,428</span>
+<div class="flex items-center gap-1.5 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="inline-flex items-center font-bold text-primary-container">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +18%
+          </span>
+<span>dibandingkan bulan lalu</span>
+</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-primary-fixed/20 via-transparent to-transparent rounded-bl-full pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Disetujui &amp; Sah</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-display-hero text-[34px] leading-tight text-primary-container font-extrabold">1,290</span>
+<div class="flex items-center gap-2 mt-1">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[90.3%]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container font-bold">90.3%</span>
+</div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-secondary-container/15 via-transparent to-transparent rounded-bl-full pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Proses AI &amp; Draf</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">hourglass_top</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-display-hero text-[34px] leading-tight text-secondary font-extrabold">84</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Berkas Aktif</span>
+</div>
+<div class="flex items-center gap-3 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary-container"></span> 42 AI</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary-container"></span> 42 Draf</span>
+</div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="relative overflow-hidden bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="absolute right-0 top-0 w-24 h-24 bg-gradient-to-bl from-tertiary-fixed/30 via-transparent to-transparent rounded-bl-full pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Kuota Otomasi AI</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col">
+<div class="flex items-baseline justify-between">
+<span class="font-display-hero text-[34px] leading-tight text-on-surface font-extrabold">856</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">/ 1.000 Dokumen</span>
+</div>
+<div class="flex items-center justify-between mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-primary font-bold">Paket Desa &amp; Instansi</span>
+<span class="font-label-sm text-label-sm text-secondary">Sisa 85.6%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 3. Toolbar: Pencarian, Filter & Status Tabs -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<!-- Filter Tabs (Status Filter) -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+<button class="tab-btn px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center gap-2 transition-all" type="button">
+<span>Semua Berkas</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/20 font-label-sm text-label-sm">1,428</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
+<span>Selesai &amp; Sah</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-bold">1,290</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
+<span class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          Diproses AI
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary font-bold">42</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
+<span>Draf Revisi</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-tertiary font-bold">42</span>
+</button>
+<button class="tab-btn px-4 py-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
+<span>Diarsip</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm font-semibold">54</span>
+</button>
+</div>
+<!-- Search & Dropdown Filters Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Search Input -->
+<div class="md:col-span-6 relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="tableSearch" placeholder="Cari judul dokumen, nama pembuat, atau nomor surat..." type="text"/>
+</div>
+<!-- Kategori Filter -->
+<div class="md:col-span-3 relative">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">category</span>
+<select class="w-full pl-9 pr-8 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none appearance-none cursor-pointer" id="kategoriFilter">
+<option value="">Semua Jenis Dokumen</option>
+<option value="surat">Surat Keputusan / Tugas</option>
+<option value="rab">RAB (Rencana Anggaran Biaya)</option>
+<option value="rpjmdes">RPJMDes / RKPDes</option>
+<option value="lpj">LPJ &amp; SPJ Keuangan</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Instansi Filter -->
+<div class="md:col-span-3 relative">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">domain</span>
+<select class="w-full pl-9 pr-8 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none appearance-none cursor-pointer" id="instansiFilter">
+<option value="">Semua Instansi</option>
+<option value="Pemerintah Desa Sukatani">Pemerintah Desa Sukatani</option>
+<option value="SDN 01 Harapan Jaya">SDN 01 Harapan Jaya</option>
+<option value="Kantor Kecamatan Cikarang">Kantor Kecamatan Cikarang</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. Layout Konten: Tabel Data Utama & Panel Pratinjau Interaktif -->
+<div class="grid grid-cols-1 2xl:grid-cols-12 gap-space-lg items-start">
+<!-- Tabel Dokumen (8/12 di 2xl) -->
+<div class="2xl:col-span-8 flex flex-col bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Tabel Header & Bulk Action -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 cursor-pointer" id="selectAll" type="checkbox"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Pilih Semua Berkas</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Menampilkan 6 dari 1,428 dokumen</span>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container" title="Refresh Tabel" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Wrapper Tabel Horizontal Overflow -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm tracking-wide uppercase">
+<th class="py-3 px-4 w-10"></th>
+<th class="py-3 px-4 min-w-[280px]">Judul Dokumen &amp; Nomor</th>
+<th class="py-3 px-4 min-w-[110px]">Jenis</th>
+<th class="py-3 px-4 min-w-[160px]">Pembuat &amp; Instansi</th>
+<th class="py-3 px-4 min-w-[240px]">Struktur Isi / AI Summary</th>
+<th class="py-3 px-4 min-w-[150px]">Versi Standar</th>
+<th class="py-3 px-4 min-w-[130px]">Status</th>
+<th class="py-3 px-4 min-w-[140px] text-right">Ekspor &amp; Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="documentsTableBody">
+<!-- Baris 1: SK BLT Dana Desa -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectDocument('doc1')">
+<td class="py-4 px-4 align-top">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 mt-1 cursor-pointer" onclick="event.stopPropagation()" type="checkbox"/>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">
+                    Surat Keputusan Penetapan BLT Dana Desa TA 2025
+                  </span>
+<div class="flex items-center gap-1.5 mt-1 font-code-data text-code-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">tag</span>
+<span>No: 141/04/DS/2025</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-secondary font-medium">Revisi: Penyesuaian NIK 2 orang KPM pengganti hasil Musdes Khusus</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex px-2.5 py-1 rounded-md font-label-sm text-label-sm font-bold bg-primary-container/10 text-primary-container">
+                  SURAT
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Budi Santoso</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pemerintah Desa Sukatani</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">
+                  Struktur konsiderans menimbang, mengingat UU 6/2014, lampiran 45 KPM penerima manfaat BLT Desa.
+                </p>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-medium px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+                  Permendagri 20/2018
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-surface-container text-primary-container">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Selesai
+                </span>
+</td>
+<td class="py-4 px-4 align-top text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary transition-all text-on-surface-variant" title="Unduh DOCX" type="button">
+<span class="font-code-data text-code-data font-bold px-0.5">DOC</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-error hover:text-on-error transition-all text-on-surface-variant" title="Unduh PDF" type="button">
+<span class="font-code-data text-code-data font-bold px-0.5">PDF</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-all" onclick="selectDocument('doc1')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Baris 2: RAB Paving Block Dusun II -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer bg-surface-container-lowest/50" onclick="selectDocument('doc2')">
+<td class="py-4 px-4 align-top">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 mt-1 cursor-pointer" onclick="event.stopPropagation()" type="checkbox"/>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">
+                    Rencana Anggaran Biaya (RAB) Paving Block Dusun II
+                  </span>
+<div class="flex items-center gap-1.5 mt-1 font-code-data text-code-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">square_foot</span>
+<span>Volume: 450 Meter Lari (Lebar 3m)</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-secondary font-medium">Revisi: Menunggu verifikasi harga semen terbaru dari toko rekanan</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex px-2.5 py-1 rounded-md font-label-sm text-label-sm font-bold bg-secondary-container/10 text-secondary">
+                  RAB
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Ahmad Faisal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pemerintah Desa Sukatani</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">
+                  Perhitungan analisa harga satuan (AHS), material pasir, paving K-250, upah tukang Rp 78.450.000.
+                </p>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-medium px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">engineering</span>
+                  PUPR 1/2022 &amp; SNI
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-secondary-container/15 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                  Diproses AI
+                </span>
+</td>
+<td class="py-4 px-4 align-top text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary transition-all text-on-surface-variant" title="Unduh DOCX" type="button">
+<span class="font-code-data text-code-data font-bold px-0.5">DOC</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all text-on-surface-variant" title="Unduh Excel" type="button">
+<span class="font-code-data text-code-data font-bold px-0.5">XLS</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-all" onclick="selectDocument('doc2')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Baris 3: RPJMDes Bab IV -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectDocument('doc3')">
+<td class="py-4 px-4 align-top">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 mt-1 cursor-pointer" onclick="event.stopPropagation()" type="checkbox"/>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">
+                    Dokumen RPJMDes 2025-2031 Bab IV Keuangan
+                  </span>
+<div class="flex items-center gap-1.5 mt-1 font-code-data text-code-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">menu_book</span>
+<span>Periode 6 Tahunan</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-secondary font-medium">Revisi: Draft awal diselaraskan dengan RPJMD Kabupaten</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex px-2.5 py-1 rounded-md font-label-sm text-label-sm font-bold bg-tertiary-container/15 text-tertiary">
+                  RPJMDES
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hendra Gunawan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tim Perencana Desa</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">
+                  Proyeksi PADes, Dana Desa, Bagi Hasil Pajak, arah belanja bidang infrastruktur dan pemberdayaan.
+                </p>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-medium px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+                  Permendagri 114/2014
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-surface-container text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  Draf
+                </span>
+</td>
+<td class="py-4 px-4 align-top text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary transition-all text-on-surface-variant" title="Unduh DOCX" type="button">
+<span class="font-code-data text-code-data font-bold px-0.5">DOC</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-all" onclick="selectDocument('doc3')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Baris 4: LPJ Dana BOS SDN 01 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectDocument('doc4')">
+<td class="py-4 px-4 align-top">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 mt-1 cursor-pointer" onclick="event.stopPropagation()" type="checkbox"/>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">
+                    LPJ Bantuan Operasional Sekolah (BOS) TW IV
+                  </span>
+<div class="flex items-center gap-1.5 mt-1 font-code-data text-code-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">school</span>
+<span>NPSN: 20218944</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-secondary font-medium">Revisi: Telah disetujui Pengawas Sekolah &amp; Manajer BOS Dinas</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex px-2.5 py-1 rounded-md font-label-sm text-label-sm font-bold bg-primary-container/10 text-primary-container">
+                  LPJ
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Ratna Kusuma, S.Pd</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SDN 01 Harapan Jaya</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">
+                  Rekap belanja modal buku kurikulum merdeka, pemeliharaan lab komputer, pajak PPh 21/23.
+                </p>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-medium px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">school</span>
+                  Permendikbud 63/2023
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-surface-container text-primary-container">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                  Selesai
+                </span>
+</td>
+<td class="py-4 px-4 align-top text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary transition-all text-on-surface-variant" title="Unduh DOCX" type="button">
+<span class="font-code-data text-code-data font-bold px-0.5">DOC</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-error hover:text-on-error transition-all text-on-surface-variant" title="Unduh PDF" type="button">
+<span class="font-code-data text-code-data font-bold px-0.5">PDF</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-all" onclick="selectDocument('doc4')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Baris 5: SPT Tugas Kecamatan -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectDocument('doc5')">
+<td class="py-4 px-4 align-top">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 mt-1 cursor-pointer" onclick="event.stopPropagation()" type="checkbox"/>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">
+                    SPT Pengawasan Pilkades Serentak Tingkat Kecamatan
+                  </span>
+<div class="flex items-center gap-1.5 mt-1 font-code-data text-code-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span>No: 800/12/SPT-KEC/2024</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-on-surface-variant">Revisi: Arsip tahun lalu telah dinonaktifkan</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex px-2.5 py-1 rounded-md font-label-sm text-label-sm font-bold bg-surface-container text-on-surface-variant">
+                  SURAT
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Suryadi, M.Si</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kantor Kecamatan Cikarang</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">
+                  Penugasan 8 personil tim pengawas kecamatan, dasar hukum Permendagri, jadwal peninjauan TPS.
+                </p>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-medium px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">policy</span>
+                  Permenpan-RB 80/2012
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-surface-container text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+                  Diarsip
+                </span>
+</td>
+<td class="py-4 px-4 align-top text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-error hover:text-on-error transition-all text-on-surface-variant" title="Unduh PDF" type="button">
+<span class="font-code-data text-code-data font-bold px-0.5">PDF</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-all" onclick="selectDocument('doc5')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Baris 6: SPJ Insentif Posyandu -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="selectDocument('doc6')">
+<td class="py-4 px-4 align-top">
+<input class="w-4 h-4 rounded text-primary-container focus:ring-0 mt-1 cursor-pointer" onclick="event.stopPropagation()" type="checkbox"/>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold leading-tight group-hover:text-primary transition-colors">
+                    SPJ Insentif Kader Posyandu &amp; Kader KPM Januari
+                  </span>
+<div class="flex items-center gap-1.5 mt-1 font-code-data text-code-data text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">payments</span>
+<span>Kode Rek: 2.01.04.5.1</span>
+</div>
+<span class="mt-1 font-body-sm text-body-sm text-secondary font-medium">Revisi: Sedang digenerate otomatis lampiran rekap absensi</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex px-2.5 py-1 rounded-md font-label-sm text-label-sm font-bold bg-primary-container/10 text-primary-container">
+                  LPJ
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dewi Lestari</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pemerintah Desa Sukatani</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<p class="font-body-sm text-body-sm text-on-surface line-clamp-2">
+                  Daftar penerimaan tanda tangan honor 25 kader posyandu balita &amp; lansia bulan Januari 2025.
+                </p>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm font-medium px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">receipt_long</span>
+                  Permendagri 20/2018
+                </span>
+</td>
+<td class="py-4 px-4 align-top">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-secondary-container/15 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+                  Diproses AI
+                </span>
+</td>
+<td class="py-4 px-4 align-top text-right" onclick="event.stopPropagation()">
+<div class="flex items-center justify-end gap-1.5">
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary transition-all text-on-surface-variant" title="Unduh DOCX" type="button">
+<span class="font-code-data text-code-data font-bold px-0.5">DOC</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-high hover:bg-error hover:text-on-error transition-all text-on-surface-variant" title="Unduh PDF" type="button">
+<span class="font-code-data text-code-data font-bold px-0.5">PDF</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-all" onclick="selectDocument('doc6')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Baris per halaman:</span>
+<select class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="px-3 py-1 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-bold" type="button">1</button>
+<button class="px-3 py-1 rounded-lg text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">2</button>
+<button class="px-3 py-1 rounded-lg text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="px-3 py-1 rounded-lg text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">143</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 5. Panel Ringkasan Dokumen Terpilih & Lembar Pratinjau A4 (4/12 di 2xl) -->
+<div class="2xl:col-span-4 flex flex-col gap-space-md">
+<!-- Panel Card Pratinjau Dokumen -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md sticky top-24">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px] text-primary-container">article</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">Pratinjau Lembar Dokumen</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary-container font-label-sm text-label-sm font-bold">
+            Sah Terverifikasi
+          </span>
+</div>
+<!-- Render Lembar Kertas Formal A4 Digital -->
+<div class="bg-surface-container-low p-3 rounded-xl shadow-inner flex justify-center">
+<div class="w-full max-w-[420px] bg-surface-container-lowest p-5 rounded shadow-md flex flex-col justify-between min-h-[460px] text-[11px] leading-relaxed relative overflow-hidden" id="previewSheet">
+<!-- Kop Garuda / Kop Dinas Pemkab -->
+<div class="flex flex-col items-center text-center pb-2 relative">
+<div class="flex items-center justify-center gap-2 mb-1">
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold text-[10px]">
+<span class="material-symbols-outlined text-[18px] text-primary-container">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-bold text-[11px] tracking-wider text-on-surface">PEMERINTAH KABUPATEN BEKASI</span>
+<span class="font-extrabold text-[12px] tracking-wide text-primary">KECAMATAN CIKARANG UTARA</span>
+<span class="font-extrabold text-[13px] tracking-wide text-primary">KANTOR KEPALA DESA SUKATANI</span>
+</div>
+</div>
+<span class="text-[9px] text-on-surface-variant">Jalan Raya Sukatani No. 04, Cikarang Utara, Kode Pos 17530</span>
+<div class="w-full h-[2px] bg-on-surface mt-2"></div>
+<div class="w-full h-[0.5px] bg-on-surface mt-[1px]"></div>
+</div>
+<!-- Isi Dokumen Pratinjau -->
+<div class="flex flex-col gap-2 my-auto py-2">
+<div class="text-center font-bold">
+<span class="underline text-[12px] text-on-surface">KEPUTUSAN KEPALA DESA SUKATANI</span>
+<p class="text-[10px] text-on-surface-variant font-code-data">NOMOR: 141/04/DS/2025</p>
+</div>
+<div class="text-center font-bold text-[10px] text-on-surface mt-1">
+                TENTANG: PENETAPAN KELUARGA PENERIMA MANFAAT (KPM)<br/>BANTUAN LANGSUNG TUNAI (BLT) DANA DESA TAHUN ANGGARAN 2025
+              </div>
+<p class="text-justify text-[10px] text-on-surface-variant mt-2 indent-4">
+                Menimbang bahwa dalam rangka pemulihan ekonomi masyarakat desa dan pelaksanaan amanat Peraturan Menteri Keuangan serta Permendagri No. 20 Tahun 2018 tentang Pengelolaan Keuangan Desa...
+              </p>
+<!-- Kutipan Tabel Ringkas -->
+<div class="bg-surface-container-low p-2 rounded text-[9px] my-1">
+<div class="font-bold text-on-surface flex justify-between">
+<span>Jumlah Alokasi: 45 KPM</span>
+<span class="text-primary font-extrabold">Rp 300.000 / Bulan</span>
+</div>
+</div>
+</div>
+<!-- Tanda Tangan & QR Code BSrE -->
+<div class="flex items-end justify-between pt-2">
+<div class="flex flex-col items-center">
+<!-- QR Code Validasi TTE BSrE -->
+<div class="w-14 h-14 bg-surface-container-lowest p-1 rounded shadow-sm flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-[36px] text-on-surface">qr_code_2</span>
+</div>
+<span class="text-[8px] text-on-surface-variant mt-0.5 font-bold">BSrE Bersertifikasi</span>
+</div>
+<!-- Cap Stempel Basah Digital & TTD -->
+<div class="flex flex-col items-center relative text-center">
+<span class="text-[9px]">Sukatani, 15 Januari 2025</span>
+<span class="text-[9px] font-bold">Kepala Desa Sukatani,</span>
+<div class="relative w-28 h-12 flex items-center justify-center my-0.5">
+<!-- Stempel Digital Merah/Ungu Lembaga -->
+<div class="absolute w-14 h-14 rounded-full bg-primary-container/10 flex items-center justify-center opacity-85 rotate-[-12deg]">
+<div class="w-12 h-12 rounded-full bg-transparent flex flex-col items-center justify-center text-[7px] text-primary-container font-black leading-tight">
+<span>PEMERINTAH</span>
+<span>DESA</span>
+<span>SUKATANI</span>
+</div>
+</div>
+<!-- Coretan TTD -->
+<span class="font-code-data italic font-bold text-[14px] text-on-surface tracking-widest -rotate-6">H. Mulyadi</span>
+</div>
+<span class="text-[10px] font-bold underline">H. MULYADI, S.AP</span>
+<span class="text-[8px] text-on-surface-variant">NIPD. 19780812 200501 1 004</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tombol Aksi Pratinjau Cepat -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Cetak Lembar</span>
+</button>
+<button class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-secondary-container text-on-secondary-container hover:opacity-90 transition-opacity font-label-md text-label-md font-bold" type="button">
+<span class="material-symbols-outlined text-[18px]">auto_fix_high</span>
+<span>Edit via AI</span>
+</button>
+</div>
+<!-- Meta Detail Regulasi -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Integritas Tanda Tangan:</span>
+<span class="font-bold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span> Valid TTE
+            </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Hash Berkas SHA-256:</span>
+<span class="font-code-data text-[11px] text-on-surface">d9e7a...8b21c</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Kesesuaian Permendagri:</span>
+<span class="font-bold text-on-surface">100% Sesuai Format</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function selectDocument(docId) {
+    const preview = document.getElementById('previewSheet');
+    if (!preview) return;
+
+    if (docId === 'doc2') {
+      preview.innerHTML = `
+        <div class="flex flex-col items-center text-center pb-2 relative">
+          <span class="font-bold text-[11px] tracking-wider text-on-surface">PEMERINTAH KABUPATEN BEKASI</span>
+          <span class="font-extrabold text-[12px] tracking-wide text-primary">KANTOR DESA SUKATANI - BIDANG PEMBANGUNAN</span>
+          <span class="text-[9px] text-on-surface-variant">Lampiran Rencana Kerja Pemerintah Desa (RKPDes) 2025</span>
+          <div class="w-full h-[2px] bg-on-surface mt-2"></div>
+        </div>
+        <div class="flex flex-col gap-2 my-auto py-2">
+          <div class="text-center font-bold">
+            <span class="underline text-[12px] text-on-surface">RENCANA ANGGARAN BIAYA (RAB)</span>
+            <p class="text-[10px] text-on-surface-variant font-code-data">Kegiatan: Paving Block Jalan Dusun II (450m)</p>
+          </div>
+          <div class="bg-surface-container-low p-2 rounded text-[10px] flex flex-col gap-1">
+            <div class="flex justify-between"><span>1. Pasir Urug 35 M3</span><span class="font-code-data">Rp 7.700.000</span></div>
+            <div class="flex justify-between"><span>2. Paving Block K-250 1.350 M2</span><span class="font-code-data">Rp 60.750.000</span></div>
+            <div class="flex justify-between"><span>3. Upah Tukang &amp; Pekerja</span><span class="font-code-data">Rp 10.000.000</span></div>
+            <div class="w-full h-[1px] bg-outline-variant my-1"></div>
+            <div class="flex justify-between font-bold text-primary"><span>Total Estimasi:</span><span class="font-code-data">Rp 78.450.000</span></div>
+          </div>
+        </div>
+        <div class="flex items-end justify-between pt-2">
+          <div class="text-[9px]">Status: Verifikasi Material PUPR</div>
+          <div class="text-right text-[9px] font-bold">Kaur Pembangunan: Ahmad Faisal</div>
+        </div>
+      `;
+    } else if (docId === 'doc4') {
+      preview.innerHTML = `
+        <div class="flex flex-col items-center text-center pb-2 relative">
+          <span class="font-bold text-[11px] tracking-wider text-on-surface">KEMENTERIAN PENDIDIKAN, KEBUDAYAAN, RISET DAN TEKNOLOGI</span>
+          <span class="font-extrabold text-[12px] tracking-wide text-primary">SD NEGERI 01 HARAPAN JAYA</span>
+          <span class="text-[9px] text-on-surface-variant">NPSN: 20218944 - Cikarang Utara</span>
+          <div class="w-full h-[2px] bg-on-surface mt-2"></div>
+        </div>
+        <div class="flex flex-col gap-2 my-auto py-2">
+          <div class="text-center font-bold">
+            <span class="underline text-[12px] text-on-surface">LAPORAN PERTANGGUNGJAWABAN (LPJ) BOS</span>
+            <p class="text-[10px] text-on-surface-variant font-code-data">Triwulan IV TA 2024</p>
+          </div>
+          <p class="text-justify text-[10px] text-on-surface-variant indent-4">
+            Berdasarkan Permendikbudristek No. 63/2023, seluruh belanja operasional sekolah reguler telah direalisasikan dan dicatat pada sistem ARKAS Kemendikbud.
+          </p>
+          <div class="bg-surface-container-low p-2 rounded text-[10px] font-bold text-primary text-center">
+            Pajak PPh 21/23 Telah Disetor ke Kas Negara (NTPN Valid)
+          </div>
+        </div>
+        <div class="flex items-end justify-between pt-2">
+          <div class="text-[9px] font-bold text-primary">Disetujui Pengawas</div>
+          <div class="text-right text-[9px] font-bold">Bendahara: Ratna Kusuma, S.Pd</div>
+        </div>
+      `;
+    }
+  }
+
+  // Interaktivitas Filter Tabs Sederhana
+  document.querySelectorAll('.tab-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+      this.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      this.classList.add('bg-primary-container', 'text-on-primary', 'font-bold');
+    });
+  });
+
+  // Pencarian Sederhana Pada Baris Tabel
+  const searchInput = document.getElementById('tableSearch');
+  if (searchInput) {
+    searchInput.addEventListener('input', function(e) {
+      const term = e.target.value.toLowerCase();
+      const rows = document.querySelectorAll('#documentsTableBody tr');
+      rows.forEach(row => {
+        const text = row.innerText.toLowerCase();
+        row.style.display = text.includes(term) ? '' : 'none';
+      });
+    });
+  }
+
+  // Pilih Semua Checkbox
+  const selectAll = document.getElementById('selectAll');
+  if (selectAll) {
+    selectAll.addEventListener('change', function(e) {
+      const checkboxes = document.querySelectorAll('#documentsTableBody input[type="checkbox"]');
+      checkboxes.forEach(cb => cb.checked = e.target.checked);
+    });
+  }
+</script></main></div></body></html>
